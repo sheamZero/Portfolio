@@ -1,0 +1,221 @@
+#skills {
+  min-height: calc(100vh - 80px);
+  padding-top: 76px;
+}
+
+.skillsHeading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-bottom: 4rem;
+}
+
+.skillsHeading h2 {
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  color: var(--title);
+}
+
+.skillsHeading em {
+  font-style: normal;
+  color: var(--primary);
+}
+
+.skillsHeading .headingLine {
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(to right, var(--secondary), var(--primary), var(--secondary));
+  opacity: 0.5;
+  max-width: 120px;
+}
+
+/* ==============================
+   SKILLS – Layout (Your Rules)
+============================== */
+
+.skillsCards {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 800px) and (max-width: 1024px) {
+  .skillsCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1025px) {
+  .skillsCards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.skillCard {
+  background: var(--background);
+  border-radius: 1.4rem;
+  padding: 2rem 1rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.skillCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.6rem;
+  color: var(--title);
+  font-weight: 800;
+  text-align: center;
+}
+
+/* ==============================
+   SKILL ROW
+============================== */
+
+.skillList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.skillRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #f8f9fb;
+  border-radius: 1.1rem;
+  padding: 1rem;
+}
+
+/* ==============================
+   ICON STYLES
+============================== */
+
+.skillIcon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-weight: 900;
+  display: grid;
+  place-items: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.skillIcon.success {
+  background: var(--secondary);
+  color: #fff;
+}
+
+.skillIcon.info {
+  background: var(--primary);
+  color: #fff;
+}
+
+.skillIcon.warn {
+  background: #f59e0b;
+  color: #fff;
+}
+
+.skillIcon.danger {
+  background: #2563eb;
+  color: #fff;
+}
+
+.skillMeta {
+  flex: 1;
+}
+
+.skillTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.skillTop strong {
+  font-size: 0.95rem;
+  color: var(--title);
+}
+
+.skillTop span {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/* ==============================
+   PROGRESS BAR
+============================== */
+
+.skillBar {
+  width: 100%;
+  height: 7px;
+  background: #e5e7eb;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.skillBar .fill {
+  height: 100%;
+  width: 0%;
+  border-radius: 999px;
+  transition: width 1.2s ease;
+}
+
+.skillRow[data-color="green"] .fill {
+  background: var(--secondary);
+}
+
+.skillRow[data-color="blue"] .fill {
+  background: var(--primary);
+}
+
+.skillRow[data-color="yellow"] .fill {
+  background: #f59e0b;
+}
+
+.skillRow[data-color="red"] .fill {
+  background: #2563eb;
+}
+
+/* ==============================
+   SCROLL SIDEBAR
+============================== */
+
+.skillsProgress {
+  position: fixed;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 240px;
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 999px;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.skillsProgress .bar {
+  width: 100%;
+  height: 0%;
+  background: linear-gradient(to bottom, var(--primary), var(--secondary));
+  border-radius: 999px;
+  transition: height 0.2s ease-out;
+}
+
+@media (max-width: 767px) {
+  .skillsProgress {
+    display: none;
+  }
+
+  .skillRow {
+    padding: 1rem;
+  }
+
+  .skillIcon {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+  }
+}

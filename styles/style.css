@@ -1,0 +1,62 @@
+/* css variables */
+:root {
+    --primary: #1D546D;
+    --background: #F3F4F4;
+    --title: #061E29;
+    --secondary: #5F9598;
+    --white: #FFFFFF;
+    /* --light-gray: #E8ECEE; */
+
+    --btnShadow: rgba(29, 84, 109, 0.35);
+
+    --bgNavFooter: #fefcfbd9;
+
+    --projectSecondaryBg:#1d546d14;
+
+
+
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: var(--background);
+}
+
+
+
+
+#pageLayoutContainer {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+
+@media (min-width: 768px) {
+    #pageLayoutContainer {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    #pageLayoutContainer {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    #pageLayoutContainer {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+}

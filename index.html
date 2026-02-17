@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheam Hossain</title>
+
+    <!-- Roboto Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- custom styles -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/hero.css">
+    <link rel="stylesheet" href="./styles/about.css">
+    <link rel="stylesheet" href="./styles/skills.css">
+    <link rel="stylesheet" href="./styles/education.css">
+    <link rel="stylesheet" href="./styles/project.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <link rel="stylesheet" href="./styles/project.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+<!--  -->
+</head>
+
+<body>
+    <!------------------- Navigation bar ------------------>
+    <header>
+        <div class="navContainer">
+            <div class="leftGroup">
+                <button id="menuBtn" class="menuIcon">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <a href="#hero" class="logo">SHEAM</a>
+            </div>
+            <!-- Desktop menu -->
+            <div class="menuContainer">
+                <nav>
+                    <a href="#hero" class="active">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#education">Education</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+            <!-- <button class="resumeBtn">Resume</button> -->
+            <a href="assets/resume-sheam-hossain.pdf" download class="resumeBtn">
+                Resume
+            </a>
+        </div>
+    </header>
+
+    <!-- Sidebar for mobile -->
+    <aside id="sidebar">
+        <button id="closeSidebar" class="closeSidebarBtn">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <nav>
+            <a href="#hero" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </aside>
+
+
+    <main class="dot">
+        <!------------------- hero Section------------------>
+        <section id="hero">
+            <div class="heroContainer">
+                <div class="imageContainer">
+                    <img src="assets/profile.jpeg" alt="Sheam - MERN Developer" />
+                </div>
+                <div class="hero-text">
+                    <h1>Hi, I'm
+                        <span>Sheam</span>
+                    </h1>
+                    <h2><span id="role-text">MERN Stack Developer</span></h2>
+                    <!-- <h2>MERN Stack Developer</h2> -->
+                    <p>
+                        I build responsive, user-friendly web applications with clean code and modern design.
+                        Passionate about turning ideas into functional digital experiences.
+                    </p>
+                    <a href="assets/resume-sheam-hossain.pdf" download class="commonBtn downloadBtn">Download 
+                       <i class="fa-solid fa-cloud-arrow-down"></i>
+                    </a>
+                    <!-- <a  download="Resume-Sheam-Hossain.pdf" class="resumeBtn">
+                        Resume
+                    </a> -->
+
+                    <!-- Social/Contact Icons -->
+                    <div class="hero-icons">
+                        <a href="https://github.com/sheamZero" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/mdsheamhossain" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sheamhossain199@gmail.com"
+                            target="_blank" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="aboutContainer">
+
+                <!-- Signature Heading -->
+                <div class="aboutHeading">
+                    <span class="headingLine"></span>
+                    <h2>About <em>Me</em></h2>
+                    <span class="headingLine"></span>
+                </div>
+
+                <div class="aboutGrid">
+
+                    <!-- Left: Visual Card -->
+                    <div class="aboutVisual">
+                        <div class="aboutCard">
+                            <h3>Who I Am</h3>
+                            <p>
+                                A detail-oriented MERN Stack Developer focused on building
+                                fast, accessible, and scalable web experiences. I enjoy
+                                solving real-world problems with clean architecture and
+                                thoughtful UI design.
+                            </p>
+
+                            <div class="aboutStats">
+                                <div class="statBadge">
+                                    <i class="fa-solid fa-briefcase"></i>
+                                    <span>1+</span>
+                                    <small>Years</small>
+                                </div>
+                                <div class="statBadge">
+                                    <i class="fa-solid fa-diagram-project"></i>
+                                    <span>15+</span>
+                                    <small>Projects</small>
+                                </div>
+                                <div class="statBadge">
+                                    <i class="fa-solid fa-bolt"></i>
+                                    <span>100%</span>
+                                    <small>Ownership</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Content -->
+                    <div class="aboutContent">
+
+                        <p>
+                            I specialize in building full-stack web applications using
+                            MongoDB, Express, React, and Node.js. My work emphasizes
+                            performance, maintainability, and intuitive user experience.
+                        </p>
+
+                        <p class="secondaryText">
+                            I enjoy turning complex ideas into simple, elegant solutions.
+                            Whether it's designing responsive UIs or building secure APIs,
+                            I take ownership of every layer of the stack.
+                        </p>
+
+                        <!-- Developer Philosophy -->
+                        <div class="aboutPhilosophy">
+                            <i class="fa-solid fa-code"></i>
+                            <p>
+                                I believe great software lives at the intersection of performance,
+                                clarity, and human-centered design. My goal is not just to ship features,
+                                but to craft experiences that feel intuitive, fast, and dependable.
+                            </p>
+                        </div>
+
+                        <a href="#projects" class="commonBtn">
+                            View My Work
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="skillsContainer" id="pageLayoutContainer">
+
+                <div class="skillsHeading">
+                    <span class="headingLine"></span>
+                    <h2>My <em>Skills</em></h2>
+                    <span class="headingLine"></span>
+                </div>
+
+                <div class="skillsCards">
+
+                    <!-- Frontend -->
+                    <div class="skillCard">
+                        <h3>Frontend</h3>
+                        <div class="skillList">
+
+                            <div class="skillRow" data-level="75" data-color="blue">
+                                <div class="skillIcon info">
+                                    <i class="fa-brands fa-react"></i>
+                                </div>
+                                <div class="skillMeta">
+                                    <div class="skillTop">
+                                        <strong>React</strong>
+                                        <span>75%</span>
+                                    </div>
+                                    <div class="skillBar">
+                                        <div class="fill"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skillRow" data-level="70" data-color="yellow">
+                                <div class="skillIcon warn">
+                                    <i class="fa-brands fa-js"></i>
+                                </div>
+                                <div class="skillMeta">
+                                    <div class="skillTop">
+                                        <strong>JavaScript (ES6+)</strong>
+                                        <span>70%</span>
+                                    </div>
+                                    <div class="skillBar">
+                                        <div class="fill"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skillRow" data-level="85" data-color="red">
+                                <div class="skillIcon danger">
+                                    <i class="fa-brands fa-html5"></i>
+                                </div>
+                                <div class="skillMeta">
+                                    <div class="skillTop">
+                                        <strong>HTML5</strong>
+                                        <span>85%</span>
+                                    </div>
+                                    <div class="skillBar">
+                                        <div class="fill"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skillRow" data-level="80" data-color="blue">
+                                <div class="skillIcon info">
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                </div>
+                                <div class="skillMeta">
+                                    <div class="skillTop">
+                                        <strong>CSS3</strong>
+                                        <span>80%</span>
+                                    </div>
+                                    <div class="skillBar">
+                                        <div class="fill"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skillRow" data-level="80" data-color="green">
+                                <div class="skillIcon success">
+                                    <i class="fa-solid fa-mobile-screen"></i>
+                                </div>
+                                <div class="skillMeta">
+                                    <div class="skillTop">
+                                        <strong>Responsive Design</strong>
+                                        <span>80%</span>
+                                    </div>
+                                    <div class="skillBar">
+                                        <div class="fill"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skillRow" data-level="70" data-color="blue">
+                                <div class="skillIcon info">
+                                    <i class="fa-solid fa-wind"></i>
+                                </div>
+                                <div class="skillMeta">
+                                    <div class="skillTop">
+                                        <strong>Tailwind CSS</strong>
+                                        <span>70%</span>
+                                    </div>
+                                    <div class="skillBar">
+                                        <div class="fill"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skillRow" data-level="65" data-color="green">
+                                <div class="skillIcon success">
+                                    <i class="fa-solid fa-n"></i>
+                                </div>
+                                <div class="skillMeta">
+                                    <div class="skillTop">
+                                        <strong>Next.js</strong>
+                                        <span>65%</span>
+                                    </div>
+                                    <div class="skillBar">
+                                        <div class="fill"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skillRow" data-level="60" data-color="blue">
+                                <div class="skillIcon info">
+                                    <i class="fa-solid fa-layer-group"></i>
+                                </div>
+                                <div class="skillMeta">
+                                    <div class="skillTop">
+                                        <strong>Shadcn/ui</strong>
+                                        <span>60%</span>
+                                    </div>
+                                    <div class="skillBar">
+                                        <div class="fill"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!-- Backend -->
+                    <div class="skillCard">
+                        <h3>Backend</h3>
+                        <div class="skillList">
+
+                            <div class="skillRow" data-level="65" data-color="green">
+                                <div class="skillIcon success">
+                                    <i class="fa-brands fa-node-js"></i>
+                                </div>
+                                <div class="skillMeta">
+                                    <div class="skillTop"><strong>Node.js</strong><span>65%</span></div>
+                                    <div class="skillBar">
+                                        <div class="fill"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skillRow" data-level="70" data-color="blue">
+                                <div class="skillIcon info">
+                                    <i class="fa-solid fa-server"></i>
+                                </div>
+                                <div class="skillMeta">
+                                    <div class="skillTop"><strong>Express.js</strong><span>70%</span></div>
+                                    <div class="skillBar">
+                                        <div class="fill"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skillRow" data-level="75" data-color="green">
+                                <div class="skillIcon success">
+                                    <i class="fa-solid fa-plug"></i>
+                                </div>
+                                <div class="skillMeta">
+                                    <div class="skillTop"><strong>RESTful APIs</strong><span>75%</span></div>
+                                    <div class="skillBar">
+                                        <div class="fill"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skillRow" data-level="65" data-color="yellow">
+                                <div class="skillIcon warn">
+                                    <i class="fa-solid fa-key"></i>
+                                </div>
+                                <div class="skillMeta">
+                                    <div class="skillTop"><strong>JWT / Auth</strong><span>65%</span></div>
+                                    <div class="skillBar">
+                                        <div class="fill"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skillRow" data-level="60" data-color="blue">
+                                <div class="skillIcon info">
+                                    <i class="fa-solid fa-database"></i>
+                                </div>
+                                <div class="skillMeta">
+                                    <div class="skillTop"><strong>MySQL</strong><span>60%</span></div>
+                                    <div class="skillBar">
+                                        <div class="fill"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skillRow" data-level="65" data-color="yellow">
+                                <div class="skillIcon warn">
+                                    <i class="fa-brands fa-firefox-browser"></i>
+                                </div>
+                                <div class="skillMeta">
+                                    <div class="skillTop"><strong>Firebase</strong><span>65%</span></div>
+                                    <div class="skillBar">
+                                        <div class="fill"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Database & Tools -->
+                    <div class="skillCard">
+                        <h3>Database & Tools</h3>
+                        <div class="skillList">
+
+                            <div class="skillRow" data-level="70" data-color="green">
+                                <div class="skillIcon success">
+                                    <i class="fa-solid fa-leaf"></i>
+                                </div>
+                                <div class="skillMeta">
+                                    <div class="skillTop"><strong>MongoDB</strong><span>70%</span></div>
+                                    <div class="skillBar">
+                                        <div class="fill"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skillRow" data-level="75" data-color="green">
+                                <div class="skillIcon success">
+                                    <i class="fa-brands fa-github"></i>
+                                </div>
+                                <div class="skillMeta">
+                                    <div class="skillTop"><strong>Git & GitHub</strong><span>75%</span></div>
+                                    <div class="skillBar">
+                                        <div class="fill"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skillRow" data-level="85" data-color="blue">
+                                <div class="skillIcon info">
+                                    <i class="fa-solid fa-code"></i>
+                                </div>
+                                <div class="skillMeta">
+                                    <div class="skillTop"><strong>VS Code</strong><span>85%</span></div>
+                                    <div class="skillBar">
+                                        <div class="fill"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skillRow" data-level="65" data-color="yellow">
+                                <div class="skillIcon warn">
+                                    <i class="fa-brands fa-figma"></i>
+                                </div>
+                                <div class="skillMeta">
+                                    <div class="skillTop"><strong>Figma</strong><span>65%</span></div>
+                                    <div class="skillBar">
+                                        <div class="fill"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skillRow" data-level="75" data-color="blue">
+                                <div class="skillIcon info">
+                                    <i class="fa-solid fa-vial"></i>
+                                </div>
+                                <div class="skillMeta">
+                                    <div class="skillTop"><strong>Postman</strong><span>75%</span></div>
+                                    <div class="skillBar">
+                                        <div class="fill"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!------------------- education Section------------------>
+        <section id="education">
+            <div id="pageLayoutContainer">
+
+                <div class="educationHeading">
+                    <span class="headingLine"></span>
+                    <h2>My <em>Education</em></h2>
+                    <span class="headingLine"></span>
+                </div>
+
+                <div class="educationTimeline">
+
+                    <div class="eduItem">
+                        <div class="eduDot"></div>
+                        <div class="eduCard">
+                            <div class="eduTop">
+                                <h3>Bachelor of Science in Computer Science & Engineering</h3>
+                                <span class="eduYear">2022 - 2025</span>
+                            </div>
+                            <p class="eduInstitute">Varendra University, Rajshahi</p>
+                            <p class="eduDesc">
+                                Specialized in software engineering and full-stack development.
+                                Completed major coursework in data structures, algorithms, network & security, web
+                                technologies, and database systems.
+                            </p>
+                            <ul class="eduHighlights">
+                                <li>CGPA: 3.67 / 4.00</li>
+                                <li>Final Year Thesis : YOLO-Based Object Detection for Traffic Monitoring using Machine
+                                    Learning</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="eduItem">
+                        <div class="eduDot"></div>
+                        <div class="eduCard">
+                            <div class="eduTop">
+                                <h3>Higher Secondary Certificate (Science)</h3>
+                                <span class="eduYear">2018 - 2020</span>
+                            </div>
+                            <p class="eduInstitute">Qadirabad Cantonment Public Sapper College, Natore</p>
+                            <p class="eduDesc">
+                                Focused on mathematics, physics, and computer fundamentals.
+                                Built a strong analytical and problem-solving foundation.
+                            </p>
+                            <ul class="eduHighlights">
+                                <li>GPA: 5.00 / 5.00</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- <div class="eduItem">
+                        <div class="eduDot"></div>
+                        <div class="eduCard">
+                            <div class="eduTop">
+                                <h3>Secondary School Certificate (Science)</h3>
+                                <span class="eduYear">2016 - 2018</span>
+                            </div>
+                            <p class="eduInstitute">Saint Louis High School, Natore</p>
+                            <p class="eduDesc">
+                                Developed early interest in programming and logical reasoning.
+                                Participated in multiple inter-school science fairs.
+                            </p>
+                            <ul class="eduHighlights">
+                                <li>GPA: 5.00 / 5.00</li>
+                                <li>Science Fair Winner - 2017</li>
+                            </ul>
+                        </div>
+                    </div> -->
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="projects">
+            <div id="pageLayoutContainer">
+
+                <div class="projectsHeading">
+                    <span class="headingLine"></span>
+                    <h2>My <em>Projects</em></h2>
+                    <span class="headingLine"></span>
+                </div>
+
+                <div class="projectList">
+
+                    <!-- Project 1 -->
+                    <article class="projectRow reveal">
+                        <div class="projectMedia">
+                            <img src="assets/project_1.png" alt="tabletalk restaurant website screenshot">
+                        </div>
+
+                        <div class="projectInfo">
+                            <h1>Tabletalk - Restaurant Management System</h1>
+                            <p> A comprehensive restaurant management platform built with the MERN stack. Tabletalk
+                                streamlines operations with an intuitive menu management system, real-time reservation
+                                booking, secure payment processing, and role-based dashboards for both customers and
+                                administrators.
+                            </p>
+
+                            <ul class="projectTech">
+                                <li>React</li>
+                                <li>Node.js</li>
+                                <li>MongoDB</li>
+                                <li>Stripe</li>
+                                <li>Firebase Authentication</li>
+                                <li>Tailwind CSS</li>
+                            </ul>
+
+                            <a href="projectDetails/project_1.html" class="projectLink">
+                                View Details <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="projectRow reverse reveal">
+                        <div class="projectMedia">
+                            <img src="assets/project_2.png" alt="Animated Portfolio">
+                        </div>
+
+                        <div class="projectInfo">
+                            <h1>ZenTask - Task Management Platform</h1>
+                            <p>
+                                A modern responsive task management platform featuring scroll-triggered
+                                animations, performance optimization, and accessibility-first
+                                UI architecture.
+                            </p>
+
+                            <ul class="projectTech">
+                                <li>React (Vite)</li>
+                                <li>Node.js</li>
+                                <li>Express.js</li>
+                                <li>MongoDB</li>
+                            </ul>
+
+                            <a href="projectDetails/project_2.html" class="projectLink">
+                                View Details <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="projectRow reveal">
+                        <div class="projectMedia">
+                            <img src="assets/project_3.png" alt="art and carft store">
+                        </div>
+
+                        <div class="projectInfo">
+                            <h3>Craft!qo - Art & Craft Store Website</h3>
+                            <p>
+                                A comprehensive art and craft e-commerce platform that connects creative artists
+                                with customers worldwide. Built with modern web technologies, Craft!qo offers a
+                                seamless shopping experience with diverse art and craft subcategories, secure
+                                user authentication via Firebase, and a user-friendly interface powered by React
+                                and Tailwind CSS.
+                            </p>
+
+                            <ul class="projectTech">
+                                <li>React</li>
+                                <li>Node.js</li>
+                                <li>MongoDB</li>
+                                <li>Firebase Authentication</li>
+                                <li>Tailwind CSS</li>
+                            </ul>
+
+                            <a href="projectDetails/project_3.html" class="projectLink">
+                                View Details <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div id="pageLayoutContainer">
+                <div class="contactHeading">
+                    <span class="headingLine"></span>
+                    <h2>Get in <em>Touch</em></h2>
+                    <span class="headingLine"></span>
+                </div>
+
+                <div class="contactContent">
+                    <!-- Contact Info -->
+                    <div class="contactInfo">
+                        <h3>Reach Out Directly</h3>
+                        <p>If you want to discuss a project, collaboration, or just say hi, feel free to contact me via
+                            email or social platforms.</p>
+
+                        <ul class="infoList">
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                <a href="mailto:sheamhossain@gmail.com">sheamhossain199@gmail.com</a>
+                            </li>
+                            <li><i class="fa-solid fa-phone"></i> <a href="tel:+880123456789">+880 1909-758810</a></li>
+                            <li><i class="fa-solid fa-location-dot"></i> Rajshahi, Bangladesh</li>
+                        </ul>
+
+                        <div class="socialLinks">
+                            <a href="https://www.linkedin.com/in/mdsheamhossain" target="_blank"><i
+                                    class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/sheamZero" target="_blank"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sheamhossain199@gmail.com"
+                                target="_blank" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contactForm">
+                        <h3>Send a Message</h3>
+                        <form id="contact-form">
+                            <input type="text" name="user_name" placeholder="Your Name" required>
+                            <input type="email" name="user_email" placeholder="Your Email" required>
+                            <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                            <button type="submit" class="btnSubmit">
+                                Send Message
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div id="pageLayoutContainer">
+
+            <div class="footerGrid">
+
+                <!-- Brand Column -->
+                <div class="footerBrand">
+                    <h3>Sheam Hossain</h3>
+                    <p>
+                        Building scalable web applications and intelligent systems with a
+                        focus on performance, clean UI, and long-term maintainability.
+                    </p>
+
+                    <div class="footerSocials">
+                        <a href="https://www.linkedin.com/in/mdsheamhossain" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/sheamZero" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sheamhossain199@gmail.com" target="_blank" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footerLinks">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services / Focus -->
+                <div class="footerLinks">
+                    <h4>Focus Areas</h4>
+                    <ul>
+                        <li>Full-Stack Web Apps</li>
+                        <li>REST API Design</li>
+                        <li>Computer Vision</li>
+                        <li>Data Engineering</li>
+                        <li>System Optimization</li>
+                    </ul>
+                </div>
+
+                <!-- CTA Column -->
+                <div class="footerCTA">
+                    <h4>Let's Build Something</h4>
+                    <p>
+                        Have an idea or a project in mind? Let's discuss how we can turn it into a
+                        production-ready solution.
+                    </p>
+                    <a href="#contact" class="footerBtn">
+                        Start a Conversation <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footerBottom">
+                <span>© 2026 Sheam Hossain. All rights reserved.</span>
+                <!-- <span class="footerNote">
+        Designed & Built with precision.
+      </span> -->
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="scripts/hero.js"></script>
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/skills.js"></script>
+    <script src="scripts/education.js"></script>
+    <script src="scripts/project.js"></script>
+    <script src="scripts/contact.js"></script>
+</body>
+
+</html>

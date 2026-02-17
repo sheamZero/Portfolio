@@ -1,0 +1,266 @@
+#hero {
+    min-height: calc(100vh - 80px);
+    padding-top: 76px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    /* border: 1px solid red; */
+}
+
+
+.heroContainer {
+    max-width: 1920px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+    padding: 2.5rem 1.5rem;
+    /* grid-auto-flow: dense; */
+}
+
+/* Tablet layout */
+@media (min-width: 768px) {
+    .heroContainer {
+        grid-template-columns: 1fr 1fr;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+/* Laptop layout */
+@media (min-width: 1024px) {
+    .heroContainer {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+}
+
+/* Large desktop layout */
+@media (min-width: 1200px) {
+    .heroContainer {
+        padding-left: 6rem;
+        padding-right: 6rem;
+    }
+}
+
+/* 
+   INITIAL FADE-IN ANIMATION
+*/
+.hero-text,
+.imageContainer {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.9s ease-out forwards;
+}
+
+.imageContainer {
+    animation-delay: 0.15s;
+}
+
+.hero-text {
+    animation-delay: 0.30s;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 
+   IMAGE BLOCK
+ */
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+/* Soft glow behind image */
+.imageContainer::before {
+    content: "";
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.25;
+    z-index: 0;
+}
+
+/* Profile image */
+.imageContainer img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 0.25rem solid var(--secondary);
+    box-shadow: 0 10px 50px var(--btnShadow);
+    position: relative;
+    z-index: 1;
+    animation: float 5s ease-in-out infinite;
+}
+
+/* Floating motion */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Image scaling for tablet */
+@media (min-width: 768px) {
+    .imageContainer img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/* Image scaling for desktop */
+@media (min-width: 1024px) {
+    .imageContainer img {
+        width: 360px;
+        height: 360px;
+    }
+}
+
+
+.hero-text {
+    color: var(--title);
+}
+
+.hero-text h1 {
+    font-size: clamp(2.2rem, 4vw, 3.4rem);
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+}
+
+/* Highlighted name */
+.hero-text h1 span {
+    color: var(--primary);
+    position: relative;
+}
+
+.hero-text h1 span::after {
+    content: "";
+    position: absolute;
+    bottom: 0.1em;
+    left: 0;
+    width: 100%;
+    height: 0.35em;
+    background: #5f959840;
+    z-index: -1;
+    border-radius: 0.2em;
+}
+
+/* Subtitle */
+.hero-text h2 {
+    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+    color: var(--secondary);
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.6rem;
+    min-height: 1.6rem;
+}
+
+/* Description text */
+.hero-text p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--title);
+    margin-bottom: 1.8rem;
+}
+
+
+.commonBtn {
+    display: inline-block;
+    padding: 0.9rem 2rem;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: var(--white);
+    border-radius: 999px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    box-shadow: 0 6px 22px var(--btnShadow);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.commonBtn:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 10px 30px var(--btnShadow);
+}
+
+.hero-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.8rem;
+}
+
+/* Individual icon buttons */
+.hero-icons a {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--background);
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+    transition: all 0.25s ease;
+    text-decoration: none;
+}
+
+/* Icon hover effect */
+.hero-icons a:hover {
+    background: var(--primary);
+    color: var(--white);
+    transform: translateY(-2px) scale(1.08);
+    box-shadow: 0 14px 28px var(--btnShadow);
+}
+
+.hero-icons i {
+    font-size: 1.1rem;
+}
+
+/* ===========================
+   MOBILE CENTER ALIGNMENT
+=========================== */
+@media (max-width: 767px) {
+    .hero-text {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .commonBtn {
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-block;
+    }
+
+    .hero-icons {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .imageContainer {
+        order: 2;
+    }
+
+    .hero-text {
+        padding-left: 3rem;
+        order: 1;
+    }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabletalk | Restaurant Management System</title>
+  <link rel="stylesheet" href="./projectsDetails.css">
+  <link rel="stylesheet" href="../styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <section class="projectDetail" id="pageLayoutContainer">
+
+    <!-- Back Button -->
+    <a href="/index.html#projects" class="backLink">
+      <i class="fa-solid fa-arrow-left"></i> Back
+    </a>
+
+    <!-- Project Main Image -->
+    <div class="detailMedia">
+      <img src="/assets/project_1.png" alt="tabletalk restaurant website screenshot">
+    </div>
+
+    <!-- Project Info -->
+    <div class="detailInfo">
+      <h1>Tabletalk-Restaurant Management System</h1>
+      <p>
+        Tabletalk is a full-stack restaurant management platform built using the MERN stack.
+        The system streamlines restaurant operations including menu management,
+        order processing, secure authentication, role-based access control, and payment integration.
+        It is designed with scalability, security, and performance optimization in mind.
+      </p>
+
+      <h2>Tech Stack</h2>
+      <ul class="detailTech">
+        <li><i class="fa-brands fa-react"></i> React.js</li>
+        <li><i class="fa-brands fa-node-js"></i> Node.js</li>
+        <li><i class="fa-solid fa-server"></i> Express.js</li>
+        <li><i class="fa-database"></i> MongoDB</li>
+        <li><i class="fa-solid fa-key"></i> JWT Authentication</li>
+        <li><i class="fa-solid fa-envelope"></i> Nodemailer (Email Service)</li>
+        <li><i class="fa-brands fa-stripe"></i> Stripe Payment Integration</li>
+        <li><i class="fa-solid fa-cloud"></i> Firebase Hosting</li>
+        <li><i class="fa-solid fa-rocket"></i> Vercel Deployment</li>
+      </ul>
+
+      <div class="detailActions">
+        <a href="https://restaurant-management-3456a.web.app/" target="_blank" class="detailBtn primary">
+          <i class="fa-solid fa-eye"></i> Live Demo
+        </a>
+        <a href="https://github.com/sheamZero/restaurant-management-client" target="_blank" class="detailBtn outline">
+          <i class="fa-brands fa-github"></i> GitHub Repository
+        </a>
+      </div>
+
+      <h2>Features</h2>
+      <ul class="detailList">
+        <li>Secure user authentication with JWT & HTTP-only cookies</li>
+        <li>Role-based dashboards (Admin & User)</li>
+        <li>Dynamic menu management (CRUD operations)</li>
+        <li>Online food ordering and cart system</li>
+        <li>Stripe payment gateway integration</li>
+        <li>Order tracking and status management</li>
+        <li>Search, filter, sort, and pagination functionality</li>
+        <li>Fully responsive UI for desktop, tablet, and mobile devices</li>
+      </ul>
+
+      <!-- Additional Sections -->
+      <div class="additionalSection">
+        <h2>Challenges & Solutions</h2>
+        <p>
+          Implementing secure authentication and handling protected API routes was a major challenge.
+          This was solved using JWT tokens stored in HTTP-only cookies and middleware-based role verification.
+          Additionally, efficient pagination and server-side filtering were implemented to optimize performance
+          for large datasets.
+        </p>
+      </div>
+
+      <div class="additionalSection">
+        <h2>Future Improvements</h2>
+        <p>
+          Planned improvements include real-time order updates using WebSockets, advanced analytics dashboards for
+          restaurant owners, and automated email notifications for order confirmations.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+
+</html>

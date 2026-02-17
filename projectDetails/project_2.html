@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZenTask | Task Management Platform</title>
+    <link rel="stylesheet" href="projectsDetails.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <section class="projectDetail" id="pageLayoutContainer">
+
+        <!-- Back Button -->
+        <a href="/index.html#projects" class="backLink">
+            <i class="fa-solid fa-arrow-left"></i> Back
+        </a>
+
+        <!-- Project Main Image -->
+        <div class="detailMedia">
+            <img src="/assets/project_2.png" alt="MERN E-Commerce Platform">
+        </div>
+
+        <!-- Project Info -->
+        <div class="detailInfo">
+            <h1>ZenTask - Task Management Platform</h1>
+
+            <p>
+                ZenTask is a full-stack task management and micro-job marketplace platform
+                where buyers can post tasks, workers can complete tasks for rewards,
+                and admins manage the entire ecosystem.
+                The system is built with scalability, role-based access control,
+                and real-world workflow automation in mind.
+            </p>
+
+            <h2>Tech Stack</h2>
+            <ul class="detailTech">
+                <li><i class="fa-brands fa-react"></i> React (Vite)</li>
+                <li><i class="fa-brands fa-node-js"></i> Node.js</li>
+                <li><i class="fa-solid fa-server"></i> Express.js</li>
+                <li><i class="fa-database"></i> MongoDB</li>
+                <li><i class="fa-solid fa-fire"></i> Firebase Authentication</li>
+                <li><i class="fa-solid fa-lock"></i> JWT & Protected Routes</li>
+                <li><i class="fa-solid fa-cloud-arrow-up"></i> Image Upload (Cloud)</li>
+            </ul>
+
+            <div class="detailActions">
+                <a href="https://task-management-website-4fb15.web.app" target="_blank" class="detailBtn primary">
+                    <i class="fa-solid fa-eye"></i> Live Demo
+                </a>
+                <a href="https://github.com/sheamZero/task-management/tree/main/task-management-client" target="_blank"
+                    class="detailBtn outline">
+                    <i class="fa-brands fa-github"></i> GitHub Repository
+                </a>
+            </div>
+
+            <h2>Features</h2>
+            <ul class="detailList">
+                <li>Role-based dashboards (Admin, Buyer, Worker)</li>
+                <li>Secure authentication using Firebase & JWT</li>
+                <li>Task creation, submission, approval, and rejection system</li>
+                <li>Protected routes with PrivateRoute implementation</li>
+                <li>Axios interceptors for secure API communication</li>
+                <li>Responsive UI with reusable components</li>
+                <li>Admin controls for users, tasks, and platform analytics</li>
+            </ul>
+
+            <!-- Additional Sections -->
+            <div class="additionalSection">
+                <h2>Challenges & Solutions</h2>
+                <p>
+                    Implementing role-based access control was one of the main challenges.
+                    This was solved by combining Firebase authentication with JWT tokens
+                    and protected routes, ensuring users only access authorized dashboards.
+                    Axios interceptors were used to handle secure API calls efficiently.
+                </p>
+            </div>
+
+            <div class="additionalSection">
+                <h2>Future Improvements</h2>
+                <p>
+                    Planned enhancements include real-time notifications,
+                    wallet & withdrawal systems, advanced admin analytics,
+                    task rating systems, and performance optimization
+                    using caching and pagination.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
